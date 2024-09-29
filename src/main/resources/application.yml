@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+# DataSource Configuration
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=Rest
+    username: sa
+    password: R3st123!
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  # JPA and Hibernate Configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
